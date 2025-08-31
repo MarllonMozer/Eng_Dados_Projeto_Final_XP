@@ -202,7 +202,7 @@ services:
     volumes:
       - ./notebooks:/home/jovyan/work
       - ./jars:/opt/spark/jars
-      - ../.env_kafka_connect:/home/jovyan/.env_kafka_connect
+      - ./.env_kafka_connect:/home/jovyan/.env_kafka_connect
     environment:
       - SPARK_MASTER=spark://spark-master:7077
     command: start-notebook.sh --NotebookApp.token=''
