@@ -3,8 +3,8 @@
 .env_kafka_connect
 
 # Arquivos de ambiente local
-#.env
-#.env_kafka_connect
+.env
+.env_kafka_connect
 
 # Venv
 .venv
