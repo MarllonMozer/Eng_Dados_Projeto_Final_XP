@@ -60,7 +60,7 @@ docker build -t connect-custom:1.0.0 .
 #### subir o docker compose
 docker-compose up -d
 
-7. Criar Tópicos no Kafka
+ Criar Tópicos no Kafka
 Acesse o container do broker:
 
 bash
@@ -78,7 +78,7 @@ kafka-topics --create \
 --replication-factor 1 \
 --topic postgres-dadostesouropre
 
-8. Registrar Conectores Source (JDBC)
+ Registrar Conectores Source (JDBC)
 Na raiz do projeto:
 
 curl -X POST -H "Content-Type: application/json" \
@@ -89,7 +89,7 @@ curl -X POST -H "Content-Type: application/json" \
 --data "@connect_jdbc_postgres_pre.config" \
 http://localhost:8083/connectors
 
-11. Configurar Permissões do S3
+Configurar Permissões do S3
 Adicione a seguinte política em cada bucket no console da AWS (substitua pelo seu ARN de usuário):
 
 {
